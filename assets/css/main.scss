@@ -58,6 +58,9 @@ img {
     max-width: 870px !important;
     margin: 0 auto;
     padding: 5rem 0;
+    @include for-phone {
+        padding: 3rem 1rem;
+    }
 }
 
 .site-logo {

@@ -17,6 +17,12 @@ img {
   padding: 5rem 0;
 }
 
+@media (max-width: 767px) {
+  .main-content {
+    padding: 3rem 1rem;
+  }
+}
+
 .site-logo img {
   width: 75px;
 }
