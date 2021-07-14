@@ -27,9 +27,21 @@ img {
   width: 75px;
 }
 
+@media (max-width: 767px) {
+  .site-logo {
+    margin-bottom: 2rem;
+  }
+}
+
 .nav .nav-link {
   color: #203647;
   font-weight: 470;
+}
+
+@media (max-width: 767px) {
+  .nav .nav-link {
+    padding: 0 15px 0 0;
+  }
 }
 
 .banner-title {
@@ -214,6 +226,12 @@ img {
 .banner-caption p {
   font-weight: 470;
   font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .banner-caption p {
+    font-size: 1rem;
+  }
 }
 
 .banner-caption p span {
