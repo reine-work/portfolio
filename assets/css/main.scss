@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@320;400;470;600;700;800&display=swap');
+// media quaries
+@mixin for-phone-landscape {
+    @media (max-width: 767px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin for-phone-sm {
+    @media (max-width: 360px) {
+        @content;
+    }
+}
+
+@mixin for-phone {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin for-tablet {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-landscape {
+    @media (max-width: 1024px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin for-desktop-up {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin for-big-desktop-up {
+    @media (min-width: 1800px) {
+        @content;
+    }
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-content {
+    max-width: 870px !important;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.site-logo {
+    img {
+        width: 75px;
+    }
+}
+
+.nav {
+    .nav-link {
+        color: #203647;
+        font-weight: 470;
+    }
+}
+
+.banner-title {
+    padding: 5rem 0;
+    h2 {
+        font-size: 4.75rem;
+        font-weight: 800;
+        letter-spacing: -3px;
+        @include for-tablet {
+            font-size: 3rem;
+            letter-spacing: -2px;
+        }
+    }
+    // UX/UI Design
+    .banner-title-out-ux {
+        position: relative;
+        color: #fff;
+        text-shadow: -1px -1px 0 #203647, 1px -1px 0 #203647, -1px 1px 0 #203647, 1px 1px 0 #203647;
+        &::before {
+            content: "UX/UI Design";
+            position: absolute;
+            color: #fff;
+            background-image: repeating-linear-gradient( 45deg, transparent 0, transparent 2px, white 2px, white 4px);
+            -webkit-background-clip: text;
+            top: 0px;
+            left: 0;
+            z-index: -1;
+            transition: 0.2s;
+            opacity: 0;
+        }
+        &::after {
+            content: "UX/UI Design";
+            position: absolute;
+            color: #fff;
+            background-image: repeating-linear-gradient( 135deg, transparent 0, transparent 2px, white 2px, white 4px);
+            -webkit-background-clip: text;
+            top: 0px;
+            left: 0px;
+            transition: 0.2s;
+            opacity: 0;
+        }
+        &:hover:before {
+            top: 5px;
+            left: 5px;
+            opacity: 1;
+            text-shadow: none;
+            color: #FF4B93;
+        }
+        &:hover:after {
+            top: 5px;
+            left: 5px;
+            opacity: 1;
+            text-shadow: none;
+            color: #FF4B93;
+        }
+        &:hover {
+            color: #ddd;
+            text-shadow: none;
+        }
+    }
+    // Frontend Development
+    .banner-title-out-fd {
+        position: relative;
+        color: #fff;
+        text-shadow: -1px -1px 0 #203647, 1px -1px 0 #203647, -1px 1px 0 #203647, 1px 1px 0 #203647;
+        &::before {
+            content: "Frontend Development";
+            position: absolute;
+            color: #fff;
+            background-image: repeating-linear-gradient( 45deg, transparent 0, transparent 2px, white 2px, white 4px);
+            -webkit-background-clip: text;
+            top: 0px;
+            left: 0;
+            z-index: -1;
+            transition: 0.2s;
+            opacity: 0;
+        }
+        &::after {
+            content: "Frontend Development";
+            position: absolute;
+            color: #fff;
+            background-image: repeating-linear-gradient( 135deg, transparent 0, transparent 2px, white 2px, white 4px);
+            -webkit-background-clip: text;
+            top: 0px;
+            left: 0px;
+            transition: 0.2s;
+            opacity: 0;
+        }
+        &:hover:before {
+            top: 5px;
+            left: 5px;
+            opacity: 1;
+            text-shadow: none;
+            color: #FF4B93;
+        }
+        &:hover:after {
+            top: 5px;
+            left: 5px;
+            opacity: 1;
+            text-shadow: none;
+            color: #FF4B93;
+        }
+        &:hover {
+            color: #ddd;
+            text-shadow: none;
+        }
+    }
+    // Graphic Design
+    .banner-title-out-gd {
+        position: relative;
+        color: #fff;
+        text-shadow: -1px -1px 0 #203647, 1px -1px 0 #203647, -1px 1px 0 #203647, 1px 1px 0 #203647;
+        &::before {
+            content: "Graphic Design";
+            position: absolute;
+            color: #fff;
+            background-image: repeating-linear-gradient( 45deg, transparent 0, transparent 2px, white 2px, white 4px);
+            -webkit-background-clip: text;
+            top: 0px;
+            left: 0;
+            z-index: -1;
+            transition: 0.2s;
+            opacity: 0;
+        }
+        &::after {
+            content: "Graphic Design";
+            position: absolute;
+            color: #fff;
+            background-image: repeating-linear-gradient( 135deg, transparent 0, transparent 2px, white 2px, white 4px);
+            -webkit-background-clip: text;
+            top: 0px;
+            left: 0px;
+            transition: 0.2s;
+            opacity: 0;
+        }
+        &:hover:before {
+            top: 5px;
+            left: 5px;
+            opacity: 1;
+            text-shadow: none;
+            color: #FF4B93;
+        }
+        &:hover:after {
+            top: 5px;
+            left: 5px;
+            opacity: 1;
+            text-shadow: none;
+            color: #FF4B93;
+        }
+        &:hover {
+            color: #ddd;
+            text-shadow: none;
+        }
+    }
+}
+
+.banner-caption {
+    p {
+        font-weight: 470;
+        font-size: 1.25rem;
+        span {
+            opacity: .25;
+            font-style: italic;
+        }
+    }
+}
