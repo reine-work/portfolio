@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@320;400;470;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;800&family=Manrope:wght@300;400;500&display=swap');
 // media quaries
 @mixin for-phone-landscape {
     @media (max-width: 767px) and (orientation: landscape) {
@@ -42,8 +42,13 @@
     }
 }
 
+html {
+    scroll-behavior: smooth;
+    cursor: url('../img/pointer.png'), auto;
+}
+
 body {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Lexend', sans-serif;
     font-smooth: always;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -52,6 +57,10 @@ body {
 img {
     max-width: 100%;
     height: auto;
+}
+
+p {
+    font-family: 'Manrope', sans-serif;
 }
 
 .main-content {
@@ -76,6 +85,7 @@ img {
     .nav-link {
         color: #203647;
         font-weight: 470;
+        font-family: 'Manrope', sans-serif;
         @include for-phone {
             padding: 0 15px 0 0;
         }
@@ -86,8 +96,9 @@ img {
     padding: 5rem 0;
     h2 {
         font-size: 4.75rem;
-        font-weight: 800;
+        font-weight: 700;
         letter-spacing: -3px;
+        color: #192d44;
         @include for-tablet {
             font-size: 3rem;
             letter-spacing: -2px;
@@ -97,7 +108,7 @@ img {
     .banner-title-out-ux {
         position: relative;
         color: #fff;
-        text-shadow: -1px -1px 0 #203647, 1px -1px 0 #203647, -1px 1px 0 #203647, 1px 1px 0 #203647;
+        -webkit-text-stroke: 1px #192d44;
         &::before {
             content: "UX/UI Design";
             position: absolute;
@@ -125,26 +136,26 @@ img {
             top: 5px;
             left: 5px;
             opacity: 1;
-            text-shadow: none;
+            -webkit-text-stroke: 0px transparent;
             color: #FF4B93;
         }
         &:hover:after {
             top: 5px;
             left: 5px;
             opacity: 1;
-            text-shadow: none;
+            -webkit-text-stroke: 0px transparent;
             color: #FF4B93;
         }
         &:hover {
             color: #ddd;
-            text-shadow: none;
+            -webkit-text-stroke: 0px transparent;
         }
     }
     // Frontend Development
     .banner-title-out-fd {
         position: relative;
         color: #fff;
-        text-shadow: -1px -1px 0 #203647, 1px -1px 0 #203647, -1px 1px 0 #203647, 1px 1px 0 #203647;
+        -webkit-text-stroke: 1px #192d44;
         &::before {
             content: "Frontend Development";
             position: absolute;
@@ -172,26 +183,26 @@ img {
             top: 5px;
             left: 5px;
             opacity: 1;
-            text-shadow: none;
+            -webkit-text-stroke: 0px transparent;
             color: #FF4B93;
         }
         &:hover:after {
             top: 5px;
             left: 5px;
             opacity: 1;
-            text-shadow: none;
+            -webkit-text-stroke: 0px transparent;
             color: #FF4B93;
         }
         &:hover {
             color: #ddd;
-            text-shadow: none;
+            -webkit-text-stroke: 0px transparent;
         }
     }
     // Graphic Design
     .banner-title-out-gd {
         position: relative;
         color: #fff;
-        text-shadow: -1px -1px 0 #203647, 1px -1px 0 #203647, -1px 1px 0 #203647, 1px 1px 0 #203647;
+        -webkit-text-stroke: 1px #192d44;
         &::before {
             content: "Graphic Design";
             position: absolute;
@@ -219,19 +230,19 @@ img {
             top: 5px;
             left: 5px;
             opacity: 1;
-            text-shadow: none;
+            -webkit-text-stroke: 0px transparent;
             color: #FF4B93;
         }
         &:hover:after {
             top: 5px;
             left: 5px;
             opacity: 1;
-            text-shadow: none;
+            -webkit-text-stroke: 0px transparent;
             color: #FF4B93;
         }
         &:hover {
             color: #ddd;
-            text-shadow: none;
+            -webkit-text-stroke: 0px transparent;
         }
     }
 }
