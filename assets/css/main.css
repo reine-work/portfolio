@@ -20,14 +20,33 @@ p {
   font-family: 'Manrope', sans-serif;
 }
 
-.main-content {
+::-moz-selection {
+  /* Code for Firefox */
+  color: #fff;
+  background: #FF4B93;
+  -webkit-text-stroke: 0px transparent;
+}
+
+::selection {
+  color: #fff;
+  background: #FF4B93;
+  -webkit-text-stroke: 0px transparent;
+}
+
+.site-header {
   max-width: 870px !important;
   margin: 0 auto;
   padding: 5rem 0;
 }
 
+@media (max-width: 768px) {
+  .site-header {
+    padding: 3rem 1rem;
+  }
+}
+
 @media (max-width: 767px) {
-  .main-content {
+  .site-header {
     padding: 3rem 1rem;
   }
 }
@@ -36,6 +55,12 @@ p {
   width: 75px;
   -webkit-animation: rotation 15s infinite linear;
           animation: rotation 15s infinite linear;
+}
+
+@media (max-width: 768px) {
+  .site-logo {
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -70,6 +95,12 @@ p {
   color: #203647;
   font-weight: 470;
   font-family: 'Manrope', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .nav .nav-link {
+    padding: 0 15px 0 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -272,5 +303,71 @@ p {
 .banner-caption p span {
   opacity: .25;
   font-style: italic;
+}
+
+.main-content {
+  max-width: 870px !important;
+  margin: 0 auto;
+  padding: 5rem 0;
+  border-top: dotted 1px #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 3rem 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-content {
+    padding: 3rem 1rem;
+  }
+}
+
+.work-content h3 {
+  font: 700 2.5rem 'Lexend';
+  letter-spacing: -1px;
+  margin-bottom: 2rem;
+  color: #FF4B93;
+}
+
+.work-card {
+  margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .work-card {
+    margin: 1.5rem 0;
+  }
+}
+
+.work-card img {
+  margin-bottom: 1rem;
+  border-radius: 3px;
+}
+
+.work-card h5 {
+  font: 470 1.25rem 'Manrope';
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .work-card h5 {
+    font-size: 1rem;
+  }
+}
+
+.work-card p {
+  font: 470 1.25rem 'Manrope';
+  margin: 0;
+  padding: 0;
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .work-card p {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

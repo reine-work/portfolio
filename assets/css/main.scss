@@ -42,6 +42,7 @@
     }
 }
 
+// Start Global
 html {
     scroll-behavior: smooth;
     cursor: url('../img/pointer.png'), auto;
@@ -63,10 +64,27 @@ p {
     font-family: 'Manrope', sans-serif;
 }
 
-.main-content {
+::-moz-selection {
+    /* Code for Firefox */
+    color: #fff;
+    background: #FF4B93;
+    -webkit-text-stroke: 0px transparent;
+}
+
+ ::selection {
+    color: #fff;
+    background: #FF4B93;
+    -webkit-text-stroke: 0px transparent;
+}
+
+// End Global
+.site-header {
     max-width: 870px !important;
     margin: 0 auto;
     padding: 5rem 0;
+    @include for-tablet {
+        padding: 3rem 1rem;
+    }
     @include for-phone {
         padding: 3rem 1rem;
     }
@@ -76,6 +94,9 @@ p {
     img {
         width: 75px;
         animation: rotation 15s infinite linear;
+    }
+    @include for-tablet {
+        margin-bottom: 2rem;
     }
     @include for-phone {
         margin-bottom: 2rem;
@@ -96,6 +117,9 @@ p {
         color: #203647;
         font-weight: 470;
         font-family: 'Manrope', sans-serif;
+        @include for-tablet {
+            padding: 0 15px 0 0;
+        }
         @include for-phone {
             padding: 0 15px 0 0;
         }
@@ -267,6 +291,57 @@ p {
         span {
             opacity: .25;
             font-style: italic;
+        }
+    }
+}
+
+// Main section
+.main-content {
+    max-width: 870px !important;
+    margin: 0 auto;
+    padding: 5rem 0;
+    border-top: dotted 1px #f0f0f0;
+    @include for-tablet {
+        padding: 3rem 1rem;
+    }
+    @include for-phone {
+        padding: 3rem 1rem;
+    }
+}
+
+.work-content {
+    h3 {
+        font: 700 2.5rem 'Lexend';
+        letter-spacing: -1px;
+        margin-bottom: 2rem;
+        color: #FF4B93;
+    }
+}
+
+.work-card {
+    margin: 1rem 0;
+    @include for-tablet {
+        margin: 1.5rem 0;
+    }
+    img {
+        margin-bottom: 1rem;
+        border-radius: 3px;
+    }
+    h5 {
+        font: 470 1.25rem 'Manrope';
+        margin: 0;
+        padding: 0;
+        @include for-tablet {
+            font-size: 1rem;
+        }
+    }
+    p {
+        font: 470 1.25rem 'Manrope';
+        margin: 0;
+        padding: 0;
+        opacity: 0.5;
+        @include for-tablet {
+            font-size: 1rem;
         }
     }
 }
