@@ -34,11 +34,35 @@ p {
 
 .site-logo img {
   width: 75px;
+  -webkit-animation: rotation 15s infinite linear;
+          animation: rotation 15s infinite linear;
 }
 
 @media (max-width: 767px) {
   .site-logo {
     margin-bottom: 2rem;
+  }
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
   }
 }
 
