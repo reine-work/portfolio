@@ -45,7 +45,7 @@
             this.cancelOnTouch = this.defaults.cancelOnTouch;
 
             this.wrapper = document.getElementById(this.wrapperId);
-            this.wrapper.style.position = 'relative';
+            this.wrapper.style.position = 'absolute';
             this.wrapper.style.width = '100%';
 
             this.wrapperHeight = this.wrapper.clientHeight;
