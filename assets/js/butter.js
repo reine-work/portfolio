@@ -1,6 +1,6 @@
 // butter.js
 
-(function(root){
+(function(root) {
     var Butter = function() {
 
         var self = this;
@@ -10,11 +10,11 @@
             wrapperDamper: 0.07,
             cancelOnTouch: false
         }
-        
+
         this.validateOptions = function(ops) {
             for (var prop in ops) {
                 if (self.defaults.hasOwnProperty(prop)) {
-                    Object.defineProperty(self.defaults, prop, {value: Object.getOwnPropertyDescriptor(ops, prop).value})
+                    Object.defineProperty(self.defaults, prop, { value: Object.getOwnPropertyDescriptor(ops, prop).value })
                 }
             }
         }
@@ -45,7 +45,7 @@
             this.cancelOnTouch = this.defaults.cancelOnTouch;
 
             this.wrapper = document.getElementById(this.wrapperId);
-            this.wrapper.style.position = 'fixed';
+            this.wrapper.style.position = 'relative';
             this.wrapper.style.width = '100%';
 
             this.wrapperHeight = this.wrapper.clientHeight;

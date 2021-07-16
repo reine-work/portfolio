@@ -1,9 +1,12 @@
-window.addEventListener('contextmenu', function(e) {
-    // do something here... 
-    e.preventDefault();
-}, false);
+// window.addEventListener('contextmenu', function(e) {
+//     // do something here... 
+//     e.preventDefault();
+// }, false);
 
-// smooth scrolling
+
+// smooth scroll
 butter.init({
-    wrapperId: 'butter'
+    wrapperId: 'smooth-scroll',
+    wrapperDamper: 0.1,
+    cancelOnTouch: true
 });
