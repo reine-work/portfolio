@@ -7,6 +7,6 @@
 // smooth scroll
 butter.init({
     wrapperId: 'smooth-scroll',
-    wrapperDamper: 0.1,
-    cancelOnTouch: false
+    wrapperDamper: 0.05,
+    cancelOnTouch: true
 });
